@@ -1,0 +1,24 @@
+import React from "react"
+
+function Jok(props){
+
+    return(
+        <div className="jok">
+           
+            {/*<h3 style={{display: props.jok.question ? "block" : "none"}}>*/}
+            <h3 style={{display: !props.question && "none"}}>
+                Question:{props.question}
+            </h3>
+            <h3 style={{color: !props.question && "#888888" }}>
+                Answer: {props.punchLine}
+            </h3>
+            <hr />
+        </div>
+    )
+}
+
+
+
+
+
+export default Jok
